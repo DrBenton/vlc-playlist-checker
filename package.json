@@ -1,0 +1,28 @@
+{
+  "name": "vlc-playlist-checker",
+  "version": "0.0.0",
+  "description": "a Node.js micro app to check VLC playlist channels",
+  "main": "app.js",
+  "scripts": {
+    "build": "enclose --loglevel info -o ./vlc-playlist-checker.exe ./app.js "
+  },
+  "author": {
+      "name": "Olivier Philippon",
+      "url": "http://rougemine.com/"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "~2.9.34",
+    "debug": "~2.2.0",
+    "playlist-parser": "0.0.12",
+    "request": "~2.61.0",
+    "lodash": "~3.10.1",
+    "sprintf-js": "~1.0.3",
+    "commander": "~2.8.1",
+    "progress": "~1.1.8",
+    "pace": "0.0.4"
+  },
+  "devDependencies": {
+    "enclose": "~0.2.30"
+  }
+}
