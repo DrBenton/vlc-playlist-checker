@@ -145,6 +145,9 @@ function launchVlcAndWait(vlcPath, channelDuration, channelUrl, channelTitle) {
             vlcPath,
             channelUrl
         );
+        if ('win32' !== process.platform) {
+            cmd += ' &';
+        }
         exec(cmd);
 
         setTimeout(resolvePromise, channelDuration);

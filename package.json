@@ -4,7 +4,8 @@
   "description": "a Node.js micro app to check VLC playlist channels",
   "main": "app.js",
   "scripts": {
-    "build": "enclose --loglevel info -o ./vlc-playlist-checker.exe ./app.js "
+    "build-win32": "enclose --loglevel info -o ./vlc-playlist-checker.exe ./app.js ",
+    "build-linux": "enclose --loglevel info -o ./vlc-playlist-checker ./app.js "
   },
   "author": {
       "name": "Olivier Philippon",
